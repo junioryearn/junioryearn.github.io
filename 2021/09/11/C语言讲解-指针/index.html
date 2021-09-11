@@ -19,7 +19,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>我的博客网站的搭建 - JuniorYearn&#39;s blog</title>
+  <title>善于利用指针 - JuniorYearn&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-09-09 19:41" pubdate>
-        September 9, 2021 pm
+      <time datetime="2021-09-11 15:57" pubdate>
+        September 11, 2021 pm
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      444 字
+      641 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      6
        分钟
     </span>
   
@@ -225,71 +225,37 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">我的博客网站的搭建</h1>
+            <h1 style="display: none">善于利用指针</h1>
             
             <div class="markdown-body" id="post-body">
-              <h2 id="我的博客网站的搭建"><a href="#我的博客网站的搭建" class="headerlink" title="我的博客网站的搭建"></a>我的博客网站的搭建</h2><h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p>作为一名程序员，持续的学习是一件必不可少的事，俗话说的好，好记性不如烂笔头，所以有一个记录自己学习过程的地方就显得尤为重要。最终就衍生出了建立自己博客的想法，其实这个网站去年10月的时候就已经建好了，但由于后来其他事情耽误了。这学期我又重新拾起，希望自己可以坚持下去，做一个有所专精的程序开发者。</p>
-<hr>
-<h2 id="框架选择"><a href="#框架选择" class="headerlink" title="框架选择"></a>框架选择</h2><ul>
-<li>我选择的框架是基于<code>hexo</code></li>
-</ul>
-<h2 id="框架搭建"><a href="#框架搭建" class="headerlink" title="框架搭建"></a>框架搭建</h2><ul>
-<li><p><code>node.js</code>的<a target="_blank" rel="noopener" href="https://nodejs.org/">安装</a></p>
-</li>
-<li><p>通过查看node的版本检查是否安装成功</p>
-<p><img src="/img/computer-4795762_1920.jpg" srcset="/img/loading.gif" alt="image"></p>
-</li>
-<li><p>通过淘宝的镜像源安装<code>cnpm</code>管理器</p>
-<p><code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code></p>
-</li>
-<li><p>查看<code>cnpm</code>版本看是否安装成功</p>
-</li>
-<li><p>安装<code>hexo</code>框架</p>
-<p><code>cnpm install -g hexo-cli</code></p>
-<h2 id="博客搭建并本地访问"><a href="#博客搭建并本地访问" class="headerlink" title="博客搭建并本地访问"></a>博客搭建并本地访问</h2></li>
-<li><p><code>mkdir blog    #创建blog目录</code></p>
-</li>
-<li><p><code>cd blog     #进入blog目录</code></p>
-</li>
-<li><p><code>sudo hexo init     #生成博客 初始化博客</code></p>
-</li>
-<li><p><code>hexo s    #启动本地博客服务</code></p>
-</li>
-<li><p><code>http://localhost:4000/    #本地访问地址</code></p>
-</li>
-<li><p><code>hexo n 我的第一篇文章 #创建新的文章</code> </p>
-</li>
-<li><p><code>#返回blog目录</code></p>
-</li>
-<li><p><code>hexo clean #清理</code></p>
-</li>
-<li><p><code>hexo g #生成</code></p>
-<h2 id="博客部署到github"><a href="#博客部署到github" class="headerlink" title="博客部署到github"></a>博客部署到<code>github</code></h2></li>
-<li><p><code>Github</code>创建一个新的仓库，注意创建时一定要以你的用户名作为网站地址</p>
-<blockquote>
-<p><code>YourGithubName.github.io</code></p>
+              <h1 id="第8章-善于利用指针"><a href="#第8章-善于利用指针" class="headerlink" title="第8章 善于利用指针"></a>第8章 善于利用指针</h1><h2 id="什么是指针"><a href="#什么是指针" class="headerlink" title="什么是指针"></a>什么是指针</h2><p>一个==变量的地址==称为该变量的”指针“，==指针变量==是存放地址的变量</p>
+<h2 id="指针变量"><a href="#指针变量" class="headerlink" title="指针变量"></a>指针变量</h2><blockquote>
+<p>类型名 * 指针变量名</p>
 </blockquote>
-</li>
-<li><p>在<code>blog</code>目录下安装git部署插件</p>
-<blockquote>
-<p><code>cnpm install --save hexo-deployer-git</code></p>
-</blockquote>
-</li>
-<li><p>修改配置文件<code>_config.yml</code> </p>
-<pre class="language-none"><code class="language-none"># Deployment
-## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;one-command-deployment
-deploy:
-  type: git
-  repo: https:&#x2F;&#x2F;github.com&#x2F;junioryearn&#x2F;junioryearn.github.io.git
-  branch: master</code></pre></li>
-<li><p>博客部署</p>
-<blockquote>
-<p><code>hexo c    #清理一下</code><br><code>hexo g    #生成</code><br><code>hexo d    #部署到远程Github仓库</code><br>最后每次部署之前都先clean一下</p>
-</blockquote>
-</li>
-</ul>
-<p><img src="/img/2fc062cb1.png" srcset="/img/loading.gif" alt="2fc062cb1"></p>
+<pre class="language-none"><code class="language-none">int * p1, p2;</code></pre>
 
+<p>==星号是类型的一部分==</p>
+<pre class="language-none"><code class="language-none">int* p &#x3D; &amp;a;</code></pre>
+
+<p>p存放a的地址，* p获得a的值，把星号 * 视为一把开启房间的钥匙，将其加在p的前面</p>
+<ul>
+<li>int指明指针变量<code>p1</code>和<code>p2</code>的基类型为整型数据（因为不同类型的数据在内存中所占的字节数和存放方式是不同的，列如int型数据占4字节，char型数据占1字节，我们要想取出数据不仅需要知道数据在内存中存放的首地址还需知道从这块地址开始取出多长内存中的数据，而这正是基类型所指明的）</li>
+<li>“ * “ 表示该变量的类型是指针变量，即指针变量为<code>p1</code>而非 <code>*p1</code>（指向的变量）</li>
+<li>指向整型数据的指针类型表示为<code>int *</code>读作指向int的指针或简称int指针</li>
+<li>注意：指针变量只能存放地址（指针），不要将一个整数赋给一个指针变量</li>
+<li><code>*</code> 指针运算符（间接访问运算符），* p 代表指针变量 p 所指向的对象</li>
+<li>定义指针变量时如果没有初始化，指针变量中存放的地址是随机的，如果该地址指向的是系统工作区间，那么就会出错。</li>
+</ul>
+<h2 id="指针与数组"><a href="#指针与数组" class="headerlink" title="指针与数组"></a>指针与数组</h2><p>数组在内存上是连续的，数组名作为数组的首地址使用</p>
+<h2 id="使用指针变量作为函数参数"><a href="#使用指针变量作为函数参数" class="headerlink" title="使用指针变量作为函数参数"></a>使用指针变量作为函数参数</h2><p>C语言中实参变量和形参变量之间的数据传递是单向的==值传递==，形参变量相当于在内存空间中新开辟了一块空间来存储传递过来的实参值而与实参变量所在内存无关</p>
+<p>只传递过去了一个副本而不对本身无影响</p>
+<p>值传递不行，所以我们就用地址传递</p>
+<p>指针类型也可以作为函数参数的类型，这时视为把==变量的地址==传入函数。如果在函数中对这个地址中的元素进行改变，原先的数据也会改变。</p>
+<ul>
+<li>注意不能企图通过改变指针形参的值而使指针实参的值改变。</li>
+<li>不可能通过执行调用函数来改变实参指针变量的值，但是</li>
+</ul>
+<h2 id="扩展：C-里的引用"><a href="#扩展：C-里的引用" class="headerlink" title="扩展：C++里的引用"></a>扩展：C++里的引用</h2>
             </div>
             <hr>
             <div>
@@ -299,9 +265,9 @@ deploy:
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</a>
+                      <a class="hover-with-bg" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">编程语言</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+                      <a class="hover-with-bg" href="/tags/C%E8%AF%AD%E8%A8%80/">C语言</a>
                     
                   </div>
                 
@@ -314,18 +280,12 @@ deploy:
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/09/11/C%E8%AF%AD%E8%A8%80%E8%AE%B2%E8%A7%A3-%E6%8C%87%E9%92%88/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">善于利用指针</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/09/09/hello-world/">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2021/09/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA/">
+                        <span class="hidden-mobile">我的博客网站的搭建</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -509,7 +469,7 @@ deploy:
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "我的博客网站的搭建&nbsp;",
+        "善于利用指针&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

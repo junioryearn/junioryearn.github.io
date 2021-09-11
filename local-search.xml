@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>善于利用指针</title>
+    <link href="/2021/09/11/C%E8%AF%AD%E8%A8%80%E8%AE%B2%E8%A7%A3-%E6%8C%87%E9%92%88/"/>
+    <url>/2021/09/11/C%E8%AF%AD%E8%A8%80%E8%AE%B2%E8%A7%A3-%E6%8C%87%E9%92%88/</url>
+    
+    <content type="html"><![CDATA[<h1 id="第8章-善于利用指针"><a href="#第8章-善于利用指针" class="headerlink" title="第8章 善于利用指针"></a>第8章 善于利用指针</h1><h2 id="什么是指针"><a href="#什么是指针" class="headerlink" title="什么是指针"></a>什么是指针</h2><p>一个==变量的地址==称为该变量的”指针“，==指针变量==是存放地址的变量</p><h2 id="指针变量"><a href="#指针变量" class="headerlink" title="指针变量"></a>指针变量</h2><blockquote><p>类型名 * 指针变量名</p></blockquote><pre class="language-none"><code class="language-none">int * p1, p2;</code></pre><p>==星号是类型的一部分==</p><pre class="language-none"><code class="language-none">int* p &#x3D; &amp;a;</code></pre><p>p存放a的地址，* p获得a的值，把星号 * 视为一把开启房间的钥匙，将其加在p的前面</p><ul><li>int指明指针变量<code>p1</code>和<code>p2</code>的基类型为整型数据（因为不同类型的数据在内存中所占的字节数和存放方式是不同的，列如int型数据占4字节，char型数据占1字节，我们要想取出数据不仅需要知道数据在内存中存放的首地址还需知道从这块地址开始取出多长内存中的数据，而这正是基类型所指明的）</li><li>“ * “ 表示该变量的类型是指针变量，即指针变量为<code>p1</code>而非 <code>*p1</code>（指向的变量）</li><li>指向整型数据的指针类型表示为<code>int *</code>读作指向int的指针或简称int指针</li><li>注意：指针变量只能存放地址（指针），不要将一个整数赋给一个指针变量</li><li><code>*</code> 指针运算符（间接访问运算符），* p 代表指针变量 p 所指向的对象</li><li>定义指针变量时如果没有初始化，指针变量中存放的地址是随机的，如果该地址指向的是系统工作区间，那么就会出错。</li></ul><h2 id="指针与数组"><a href="#指针与数组" class="headerlink" title="指针与数组"></a>指针与数组</h2><p>数组在内存上是连续的，数组名作为数组的首地址使用</p><h2 id="使用指针变量作为函数参数"><a href="#使用指针变量作为函数参数" class="headerlink" title="使用指针变量作为函数参数"></a>使用指针变量作为函数参数</h2><p>C语言中实参变量和形参变量之间的数据传递是单向的==值传递==，形参变量相当于在内存空间中新开辟了一块空间来存储传递过来的实参值而与实参变量所在内存无关</p><p>只传递过去了一个副本而不对本身无影响</p><p>值传递不行，所以我们就用地址传递</p><p>指针类型也可以作为函数参数的类型，这时视为把==变量的地址==传入函数。如果在函数中对这个地址中的元素进行改变，原先的数据也会改变。</p><ul><li>注意不能企图通过改变指针形参的值而使指针实参的值改变。</li><li>不可能通过执行调用函数来改变实参指针变量的值，但是</li></ul><h2 id="扩展：C-里的引用"><a href="#扩展：C-里的引用" class="headerlink" title="扩展：C++里的引用"></a>扩展：C++里的引用</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>编程语言</tag>
+      
+      <tag>C语言</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>我的博客网站的搭建</title>
     <link href="/2021/09/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
     <url>/2021/09/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
